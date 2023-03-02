@@ -1,0 +1,42 @@
+:root{
+    --cor-amarela: rgb(241, 241, 136);
+    --cor-roxa: rgb(109, 14, 109);
+    --cor-roxo-escuro:#AD41FA;
+    --cor-roxo-3: #6E35FD;
+    --cor-roxo-4: #CD8CFB;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+
+    padding: 50px;
+
+    background-image: linear-gradient(to left, var(--cor-roxo-3), var(--cor-roxo-escuro));
+    color: white;
+    text-align: center;
+}
+
+section{
+    padding: 20px;
+}
+
+section p{
+    text-align: justify;
+    text-indent: 30px;
+
+    max-width: 400px;
+}
+
+section.section-tipo-1{
+    background-color: var(--cor-roxo-4);
+
+    max-width: 400px;
+}
+
+footer{
+    background-image: linear-gradient(to left, var(--cor-roxa), var(--cor-amarela));
+}
