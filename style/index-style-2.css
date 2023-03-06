@@ -16,6 +16,7 @@
     }
 }
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -25,7 +26,7 @@
 
 header{
     opacity: 0;
-    animation: fadeIn 2s 0.5s both;
+    animation: fadeIn 1s 0.25s both;
     background-image: linear-gradient(to right, var(--cor-roxo-escuro), var(--cor-rosa), var(--cor-amarelo));
 
     width: 100%;
@@ -47,7 +48,7 @@ header h1{
     margin: auto;
 
     opacity: 0;
-    animation: fadeIn 3s 2.5s both;
+    animation: fadeIn 1.25s 1.25s both;
 }
 
 header div#titulo{
@@ -67,17 +68,75 @@ header p{
     padding-top: 25px;
     
     opacity: 0;
-    animation: fadeIn 3s 2.5s both;
+    animation: fadeIn 1.25s 1.25s both;
 }
 
 /*End Header*/
 
 /*Start Main*/
 main{
-    padding-top: 20px;
+    opacity: 0;
+    padding-top: 50px;
+    animation: fadeIn 1s 2.5s both;
 }
 /*End Main*/
 
 /*Start section*/
+section{
+    padding: 50px 20px;
+    width: 100vw;
+    margin: auto;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+section h2, p{
+    text-align: justify;
+    width: 50vw;
+}
+
+section#fundo-rosa{
+    color: white;
+    background-color: var(--cor-rosa);
+}
+
+section#fundo-rosa div.content{
+    display: inline;
+    top: 2px;
+    left: 25vw;
+    margin-right: 50px;
+}
 
 /*End section*/
+
+
+/*Start footer*/
+footer{
+    color: white;
+    background-color: var(--cor-roxo-escuro);
+    height: 30px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--cor-rosa);
+    padding: 5px;
+    transition: 0.5s;
+}
+/*End footer*/
+.conteiner{
+    position: absolute;
+}
+
+.content{
+    position: relative;
+}
