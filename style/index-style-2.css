@@ -4,6 +4,16 @@
     --cor-roxo-escuro: #483C59;
 }
 
+@keyframes backgroundHeaderColor{
+    from{
+        background-color: white;
+    }
+
+    to{
+        background-color: var(--cor-roxo-escuro);
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -12,25 +22,30 @@
 }
 
 header{
+    animation-name: backgroundHeaderColor;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
     background-color: var(--cor-roxo-escuro);
 
     width: 100%;
     height: 300px;
 
-    position: relative;
+    margin: auto;
+
+    /*position: relative;*/
 }
 
-header h1{
+/*Start Header*/
 
+header h1{
     color: white;
     text-align: center;
-    font-size: 6vw;
-
-    position: absolute;
-    top: 13vh;
-    left: 22vw;
+    font-size: 2em;
 
     max-width: 400px;
+    padding-top: 75px;
+    margin: auto;
 }
 
 header div#titulo{
@@ -46,8 +61,16 @@ header p{
     color: white;
     font-family: "inter";
     font-weight: lighter;
-
-    position: absolute;
-    top: 45vw;
-    left: 35vw;
+    text-align: center;
+    padding-top: 25px;
 }
+
+/*End Header*/
+
+/*Start Main*/
+
+/*End Main*/
+
+/*Start section*/
+
+/*End section*/
