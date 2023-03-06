@@ -2,6 +2,8 @@
 
 :root{
     --cor-roxo-escuro: #483C59;
+    --cor-amarelo: #F2CE1B;
+    --cor-rosa: #D92365;
 }
 
 @keyframes backgroundHeaderColor{
@@ -11,6 +13,26 @@
 
     to{
         background-color: var(--cor-roxo-escuro);
+    }
+}
+
+@keyframes backgroundHeaderGradient{
+    from{
+        background-color: var(--cor-roxo-escuro);
+    }
+
+    to{
+        background-image: linear-gradient(to right, var(--cor-roxo-escuro, var(--cor-rosa), var(--cor-amarelo)));
+    }
+}
+
+@keyframes textFadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
     }
 }
 
@@ -46,6 +68,9 @@ header h1{
     max-width: 400px;
     padding-top: 75px;
     margin: auto;
+
+    opacity: 0;
+    animation: textFadeIn 3s 2s both;
 }
 
 header div#titulo{
@@ -63,6 +88,9 @@ header p{
     font-weight: lighter;
     text-align: center;
     padding-top: 25px;
+    
+    opacity: 0;
+    animation: textFadeIn 3s 2s both;
 }
 
 /*End Header*/
