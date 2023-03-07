@@ -77,7 +77,7 @@ header p{
 main{
     opacity: 0;
     padding-top: 50px;
-    animation: fadeIn 1s 2.5s both;
+    animation: fadeIn 0.5s 1.5s both;
 }
 /*End Main*/
 
@@ -101,10 +101,10 @@ section#fundo-rosa{
 }
 
 section#fundo-rosa div.content{
-    display: inline;
     top: 2px;
     left: 25vw;
     margin-right: 50px;
+    display: inline;
 }
 
 /*End section*/
