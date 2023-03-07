@@ -37,6 +37,10 @@ section.section-tipo-1{
     max-width: 400px;
 }
 
+section#posts-instagram{
+    background-color: var(--cor-amarela);
+}
+
 footer{
     background-image: linear-gradient(to left, var(--cor-roxa), var(--cor-amarela));
 }
