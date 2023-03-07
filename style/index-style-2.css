@@ -107,6 +107,12 @@ section#fundo-rosa div.content{
     display: inline;
 }
 
+ul{
+    /*border: 1px solid black;*/
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
 /*End section*/
 
 
